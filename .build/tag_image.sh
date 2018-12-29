@@ -21,8 +21,8 @@ IMAGES=(
 for IMAGE in "${IMAGES[@]}"
 do
 	echo "IMAGE: $IMAGE:$SRC_TAG"
-	# docker pull $IMAGE:$SRC_TAG
-	# docker tag $IMAGE:$SRC_TAG $IMAGE:$TARGET_TAG
+	docker pull $IMAGE:$SRC_TAG
+	docker tag $IMAGE:$SRC_TAG $IMAGE:$TARGET_TAG
 	if [[ "$SAVEMODE" != "--save" ]] ; then
 	    docker push $IMAGE:$TARGET_TAG
     fi
