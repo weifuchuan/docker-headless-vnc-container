@@ -1,6 +1,6 @@
 # OpenShift usage of "headless" VNC Docker images
 
-The following content uses as example the image `fuchuansia/centos-xfce-vnc` of the Dockerfile `Dockerfile.centos.xfce.vnc`.
+The following content uses as example the image `consol/centos-xfce-vnc` of the Dockerfile `Dockerfile.centos.xfce.vnc`.
 
 ## Run the image from Dockerhub
                                 
@@ -9,7 +9,7 @@ The following content uses as example the image `fuchuansia/centos-xfce-vnc` of 
 
 As soon as you are logged in and selected your oc project, you can simple run the image by using the configuration `openshift.headless-vnc.run.yaml`:
 
-    oc process -f openshift.headless-vnc.run.yaml -v APPLICATION_NAME=myrunonlypod IMAGE=fuchuansia/centos-xfce-vnc | oc create -f -
+    oc process -f openshift.headless-vnc.run.yaml -v APPLICATION_NAME=myrunonlypod IMAGE=consol/centos-xfce-vnc | oc create -f -
     # service "my-run-only-pod" created
     # route "my-run-only-pod" created
     # imagestream "my-run-only-pod" created
@@ -61,7 +61,7 @@ After the deployment, you you can look and control the fresh deployed container 
   
 
 ## Contact
-For questions, professional support or maybe some hints, feel free to contact us via **[testautomatisierung@consol.de](mailto:testautomatisierung@consol.de)** or open an [issue](https://github.com/fuchuansia/docker-headless-vnc-container/issues/new).
+For questions, professional support or maybe some hints, feel free to contact us via **[testautomatisierung@consol.de](mailto:testautomatisierung@consol.de)** or open an [issue](https://github.com/ConSol/docker-headless-vnc-container/issues/new).
 
 The guys behind:
 

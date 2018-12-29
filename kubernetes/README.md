@@ -1,6 +1,6 @@
 # Kubernetes usage of "headless" VNC Docker images
 
-The following content uses as example the image `fuchuansia/centos-xfce-vnc` of the Dockerfile [`Dockerfile.centos.xfce.vnc`](../Dockerfile.centos.xfce.vnc).
+The following content uses as example the image `consol/centos-xfce-vnc` of the Dockerfile [`Dockerfile.centos.xfce.vnc`](../Dockerfile.centos.xfce.vnc).
 
 ## Deploy one pod of `centos-xfce-vnc` image and expose a service
  
