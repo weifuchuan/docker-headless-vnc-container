@@ -6,13 +6,13 @@ set -e
 help (){
 echo "
 USAGE:
-docker run -it -p 5050:5050 -p 5901:5901 consol/<image>:<tag> <option>
+docker run -it -p 5050:5050 -p 5901:5901 fuchuansia/<image>:<tag> <option>
 
 IMAGES:
-consol/ubuntu-xfce-vnc
-consol/centos-xfce-vnc
-consol/ubuntu-icewm-vnc
-consol/centos-icewm-vnc
+fuchuansia/ubuntu-xfce-vnc
+fuchuansia/centos-xfce-vnc
+fuchuansia/ubuntu-icewm-vnc
+fuchuansia/centos-icewm-vnc
 
 TAGS:
 latest  stable version of branch 'master'
@@ -21,12 +21,12 @@ dev     current development version of branch 'dev'
 OPTIONS:
 -w, --wait      (default) keeps the UI and the vncserver up until SIGINT or SIGTERM will received
 -s, --skip      skip the vnc startup and just execute the assigned command.
-                example: docker run consol/centos-xfce-vnc --skip bash
+                example: docker run fuchuansia/centos-xfce-vnc --skip bash
 -d, --debug     enables more detailed startup output
-                e.g. 'docker run consol/centos-xfce-vnc --debug bash'
+                e.g. 'docker run fuchuansia/centos-xfce-vnc --debug bash'
 -h, --help      print out this help
 
-Fore more information see: https://github.com/ConSol/docker-headless-vnc-container
+Fore more information see: https://github.com/fuchuansia/docker-headless-vnc-container
 "
 }
 if [[ $1 =~ -h|--help ]]; then

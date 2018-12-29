@@ -11,10 +11,10 @@ if [[ $SRC_TAG == "" ]] || [[ $TARGET_TAG == "" ]] ; then
 fi
 
 IMAGES=(
-	"consol/ubuntu-xfce-vnc"
-    "consol/centos-xfce-vnc"
-    "consol/ubuntu-icewm-vnc"
-    "consol/centos-icewm-vnc"
+	"fuchuansia/ubuntu-xfce-vnc"
+    "fuchuansia/centos-xfce-vnc"
+    "fuchuansia/ubuntu-icewm-vnc"
+    "fuchuansia/centos-icewm-vnc"
 )
 
 #Loop

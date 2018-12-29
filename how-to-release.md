@@ -7,7 +7,7 @@
       .build/tag_image.sh dev 1.x.x --save
     
 * Test if the latest `dev` build is usable
-  * Change the the `FROM` statement in Sakuli `Dockerfile` to `dev` tag (in separate branch) and run (after build on dockerhub) [`docker/.build/tag_image.sh --save`](https://github.com/ConSol/sakuli/blob/master/docker/.build/tag_image.sh)  
+  * Change the the `FROM` statement in Sakuli `Dockerfile` to `dev` tag (in separate branch) and run (after build on dockerhub) [`docker/.build/tag_image.sh --save`](https://github.com/fuchuansia/sakuli/blob/master/docker/.build/tag_image.sh)  
 
 * On success - push the tested `dev` images to dockerhub
     
@@ -16,5 +16,5 @@
       
 * Merge `dev` branch to `master`
 
-* Create a release on [github.com/ConSol/docker-headless-vnc-container/releases/new](https://github.com/ConSol/docker-headless-vnc-container/releases/new)
+* Create a release on [github.com/fuchuansia/docker-headless-vnc-container/releases/new](https://github.com/fuchuansia/docker-headless-vnc-container/releases/new)
 * Write a blog post for [labs.consol.de](https://labs.consol.de/)
