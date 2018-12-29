@@ -23,8 +23,8 @@ objects:
     ports:
     - name: http-port-tcp
       protocol: TCP
-      port: 6901
-      targetPort: 6901
+      port: 5050
+      targetPort: 5050
     - name: vnc-port-tcp
       protocol: TCP
       port: 5901
@@ -79,13 +79,13 @@ objects:
           - containerPort: 5901
             name: vnc
             protocol: TCP
-          - containerPort: 6901
+          - containerPort: 5050
             name: http
             protocol: TCP
           livenessProbe:
             httpGet:
               path: /
-              port: 6901
+              port: 5050
               scheme: HTTP
             initialDelaySeconds: 10
             timeoutSeconds: 1
@@ -95,7 +95,7 @@ objects:
           readinessProbe:
             httpGet:
               path: /
-              port: 6901
+              port: 5050
               scheme: HTTP
             initialDelaySeconds: 10
             timeoutSeconds: 1
